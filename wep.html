@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Show/Hide Sections Example</title>
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/b.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body style="background-color: rgba(214,152,93,255);">
+    
+    <section id="section1">
+      <div class="star animate__animated animate__bounceInLeft">
+        <h1>What's my<br>
+        skin type?</h1>
+    <h3>Take this quick 5-question
+        quiz to find out!</h3>
+    
+        <button id="showSection2"class="start">start</button>
+    
+
+    
+    </div>
+<div class="img">   <img class="animate__animated animate__bounceInRight" src="iamges/2.webp"></div>
+
+    </section>
+
+
+
+    <section id="section2" style="display: none;">
+      <div class="im animate__animated animate__bounceInLeft" >
+        <img style="width: 600px;" src="iamges/3.jpg">
+    </div>
+    <div class="qu animate__animated animate__bounceInRight">
+        <p>Let's start by having a quick look in the mirror: how's your complexion?</p>
+        <ul>
+          <li><input type="radio" name="q1" value="a"> On the dull side</li>
+          <li><input type="radio" name="q1" value="b"> Pretty shiny all over</li>
+          <li><input type="radio" name="q1" value="c"> Shiny in places, dull in others</li>
+          <li><input type="radio" name="q1" value="d"> Glowing, darling</li>
+        </ul>
+        <button id="showSection3">ok</button>
+      </div>
+
+    </section>
+
+
+
+    <section id="section3" style="display: none;">
+      <div class="imn animate__animated animate__bounceInRight" >
+        <img style="width: 900px;" src="iamges/4.jpg">
+    </div>
+    <div class="qui animate__animated animate__bounceInLeft">
+        <p>And how would you describe
+          your pores?</p>
+        <ul>
+          <li><input type="radio" name="q2" value="a"> What pores?</li>
+          <li><input type="radio" name="q2" value="b"> Quite large</li>
+          <li><input type="radio" name="q2" value="c"> Larger in the T-zone</li>
+          <li><input type="radio" name="q2" value="d"> D
+            Can barely see them
+            
+            </li>
+        </ul>
+        <button id="showSection4">ok</button>
+      </div>
+    </section>
+
+    <section id="section4" style="display: none;">
+      <div class="imnen animate__animated animate__bounceInLeft" >
+        <img style="width: 900px;" src="iamges/5.webp">
+    </div>
+    <div class="quinn animate__animated animate__bounceInRight">
+        <p>Does your skin get red much??</p>
+        <ul>
+          <li><input type="radio" name="q3" value="a"> 
+            I often get patches of red</li>
+          <li><input type="radio" name="q3" value="b"> Not often</li>
+          <li><input type="radio" name="q3" value="c"> 
+            Sometimes, here and there
+            </li>
+          <li><input type="radio" name="q3" value="d"> Barely ever
+            
+            </li>
+        </ul>
+        <button id="showSection5">ok</button>
+      </div>
+    </section>
+
+    <section id="section5" style="display: none;">
+      <div class="ee animate__animated animate__bounceInRight" >
+        <img style="width: 900px;" src="iamges/6.jpg">
+    </div>
+    <div class="eew animate__animated animate__bounceInLeft">
+        <p>What does your skin feel like after moisturizing?</p>
+        <ul>
+          <li><input type="radio" name="q4" value="a"> 
+            It soaks up the moisture and wants more!</li>
+          <li><input type="radio" name="q4" value="b"> Kind of oily</li>
+          <li><input type="radio" name="q4" value="c"> 
+            Still dry in places, oily in others
+            </li>
+          <li><input type="radio" name="q4" value="d"> Moisturized!
+            
+            </li>
+        </ul>
+        <button id="showSection6">summit</button>
+      </div>
+    </section>
+
+    <section id="section6" style="display: none;">
+     
+    <div class="nn animate__animated animate__bounceInLeft">
+        <p>Ready to get your result?</p>
+        
+        <button id="showSection7">yes,tell me my skin type</button>
+      </div>
+    </section>
+    <section id="section7" style="display: none;">
+     
+      <div class="nne animate__animated animate__bounceInRight">
+          <p>Your skin type is <span>normal</span><p>
+            Lucky you! You have the easiest skin type to care for.</p><p> Our Simple Serum is the perfect, low-maintenance regime for your skin.</p>
+          
+        
+        </div>
+      </section>
+
+
+    <script >
+    const showSection2Button = document.getElementById('showSection2');
+      const section2 = document.getElementById('section2');
+      showSection2Button.addEventListener('click', function() {
+        section1.style.display = 'none';
+        section2.style.display = 'block';
+      });
+      
+
+      
+      </script>
+      <script>
+ const showSection3Button = document.getElementById('showSection3');
+      const section3 = document.getElementById('section3');
+      showSection3Button.addEventListener('click', function() {
+        section1.style.display = 'none';
+        section2.style.display = 'none';
+        section3.style.display = 'block';
+        
+      });
+      </script>
+      <script>
+        const showSection4Button = document.getElementById('showSection4');
+      const section4 = document.getElementById('section4');
+      showSection4Button.addEventListener('click', function() {
+        section1.style.display = 'none';
+        section2.style.display = 'none';
+        section3.style.display = 'none';
+        section4.style.display = 'block';
+      });
+      </script>
+          <script>
+            const showSection5Button = document.getElementById('showSection5');
+                 const section5 = document.getElementById('section5');
+                 showSection5Button.addEventListener('click', function() {
+                   section1.style.display = 'none';
+                   section2.style.display = 'none';
+                   section3.style.display = 'none';
+                   section4.style.display = 'none';
+                   section5.style.display = 'block';
+                 });
+                 </script>
+
+<script>
+  const showSection6Button = document.getElementById('showSection6');
+       const section6 = document.getElementById('section6');
+       showSection6Button.addEventListener('click', function() {
+         section1.style.display = 'none';
+         section2.style.display = 'none';
+         section3.style.display = 'none';
+         section4.style.display = 'none';
+         section5.style.display = 'none';
+         section6.style.display = 'block';
+       });
+       </script>
+       <script>
+        const showSection7Button = document.getElementById('showSection7');
+             const section7 = document.getElementById('section7');
+             showSection7Button.addEventListener('click', function() {
+               section1.style.display = 'none';
+               section2.style.display = 'none';
+               section3.style.display = 'none';
+               section4.style.display = 'none';
+               section5.style.display = 'none';
+               section6.style.display = 'none';
+               section7.style.display = 'block';
+             });
+             </script>
+             <script>
+              quizForm.addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevents the form from submitting and reloading the page
+
+			const q1Answer = quizForm.elements["q1"].value;
+			const q2Answer = quizForm.elements["q2"].value;
+			const q3Answer = quizForm.elements["q3"].value;
+
+			let score = 0;
+
+			if (q1Answer === "On the dull side") {
+				score++;
+			}
+
+			if (q2Answer === "What pores?") {
+				score++;
+			}
+
+			if (q3Answer === "I often get patches of red") {
+				score++;
+			}
+
+			alert(`You scored ${score} out of 3!`);
+		});
+	</script>
+
+             </script>
+    <script src="css/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>
